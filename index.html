@@ -24,12 +24,12 @@
           <p class="main-header__title">
             Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
-          <section class="main-header__contacts">
+          <div class="main-header__contacts">
             <a class="main-header__phone-number" href="tel:78125550555">+7 (812) 555-05-55</a>
             <address class="main-header__adress">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </address>
-          </section>
+          </div>
           <div class="main-header__user-controls">
             <a href="" class="main-header__log-in">Войти</a>
             <a href="" class="main-header__sign-up">Регистрация</a>
@@ -77,9 +77,10 @@
       </div>
     </header>
     <main class="main">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта Техномарт</h1>
+      <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта Техномарт</h1>
       <div class="wrapper">
         <section class="visual-catalog">
+          <h2 class="visually-hidden">Визуальный каталог</h2>
           <article class="visual-catalog__section visual-catalog__section--materials">
             <div class="visual-catalog__label">new</div>
             <h3 class="visual-catalog__ttl">
@@ -293,6 +294,32 @@
         </section>
       </div>
     </main>
+    <section class="popup-map">
+      <h2 class="visually-hidden">Как добраться</h2>
+      <button class="popup-map__close-btn close-btn" type="button" aria-label="Закрыть карту"></button>
+      <img src="img/Map.jpg" alt="Как добраться" width="940" height="450">
+    </section>
+    <section class="place-order-popup">
+      <h2 class="visually-hidden">Оформление заказа</h2>
+      <button class="place-order-popup__close-btn close-btn" type="button" aria-label="Закрыть оформление заказа"></button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label class="place-order-popup__input-label">
+          Ваше имя:
+          <input class="place-order-popup__input input-appearance" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="place-order-popup__input-label">
+          Ваш e-mail:
+          <input class="place-order-popup__input input-appearance" type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label for="place-order-popup__textarea">Текст письма:</label>
+        <textarea class="place-order-popup__textarea input-appearance" id="place-order-popup__textarea" rows="6">В свободной форме</textarea>
+        <footer class="place-order-popup__footer">
+          <button class="place-order-popup__place-order-btn red-button" type="submit">
+            ОФОРМИТЬ ЗАКАЗ
+          </button>
+        </footer>
+      </form>
+    </section>
     <footer class="main-footer">
       <div class="main-footer__top">
         <div class="wrapper">

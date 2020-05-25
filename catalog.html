@@ -24,12 +24,12 @@
           <p class="main-header__title">
             Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
-          <section class="main-header__contacts">
+          <div class="main-header__contacts">
             <a class="main-header__phone-number" href="tel:78125550555">+7 (812) 555-05-55</a>
             <address class="main-header__adress">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </address>
-          </section>
+          </div>
           <div class="main-header__user-controls">
             <div class="main-header__authorization-links">
                 <a class="main-header__profile-link" href="">
@@ -93,7 +93,7 @@
       <div class="wrapper">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
-            <a href=""></a>
+            <a href="" aria-label="Вернуться на главную"></a>
           </li>
           <li class="breadcrumbs__item">
             <a href="">Каталог</a>
@@ -107,12 +107,57 @@
         </ul>
         <h1 class="main-page-ttl">ПЕРФОРАТОРЫ</h1>
         <section class="catalog-filter left-column">
-          Фильтр
+          <h2 class="catalog-filter__ttl">
+            Фильтр
+          </h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="catalog-filter__group">
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                  <input class="catalog-filter__checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <label for="filter-bosch">BOSCH</label>
+                </li>
+                <li>
+                  <input class="catalog-filter__checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                </li>
+                <li>
+                  <input class="catalog-filter__checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                  <label for="filter-makita">MAKIta</label>
+                </li>
+                <li>
+                  <input class="catalog-filter__checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input class="catalog-filter__checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter__group">
+              <legend>ПИТАНИЕ:</legend>
+              <ul>
+                <li>
+                  <input class="catalog-filter__radio" type="radio" name="power-group" value="battery" id="filter-battery" checked>
+                  <label for="filter-battery">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input class="catalog-filter__radio" type="radio" name="power-group" value="mains" id="filter-mains">
+                  <label for="filter-mains">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">
+              ПОКАЗАТЬ
+            </button>
+          </form>
         </section>
         <div class="right-column">
           <section><h3>Сортировка</h3></section>
           <section class="catalog-list">
-            <h2>Перфораторы по выгодной цене</h2>
+            <h2 class="visually-hidden">Перфораторы по выгодной цене</h2>
             <article class="product-preview-cart">
               <div class="product-preview-cart__label">new</div>
               <div class="product-preview-cart__img">
@@ -146,6 +191,16 @@
         </div>
       </div>
     </main>
+    <div class="successful-cart-popup">
+      <button class="successful-cart-popup__close-btn close-btn" type="button" aria-label="Закрыть оформление заказа"></button>
+      <p class="successful-cart-popup__message">
+        Товар добавлен в корзину!
+      </p>
+      <footer class="successful-cart-popup__footer"class="successful-cart-popup__footer">
+        <a class="successful-cart-popup__place-order" href="">ОФОРМИТЬ ЗАКАЗ</a>
+        <a class="successful-cart-popup__return" href="">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+      </footer>
+    </div>
     <footer class="main-footer">
       <div class="main-footer__top">
         <div class="wrapper">
