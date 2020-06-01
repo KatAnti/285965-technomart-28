@@ -82,8 +82,7 @@
         <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта Техномарт</h1>
         <section class="visual-catalog">
           <h2 class="visually-hidden">Визуальный каталог</h2>
-          <article class="visual-catalog__section visual-catalog__section--materials">
-            <div class="visual-catalog__label">new</div>
+          <article class="visual-catalog__section visual-catalog__section--materials visual-catalog__section--new">
             <h3 class="visual-catalog__ttl">
               Материалы
             </h3>
@@ -91,8 +90,7 @@
               на любой вкус
             </a>
           </article>
-          <article class="visual-catalog__section visual-catalog__section--materials">
-            <div class="visual-catalog__label">new</div>
+          <article class="visual-catalog__section visual-catalog__section--tools ">
             <h3 class="visual-catalog__ttl">
               Инструменты
             </h3>
@@ -100,8 +98,7 @@
               НА ВСЕ СЛУЧАИ
             </a>
           </article>
-          <article class="visual-catalog__section visual-catalog__section--materials">
-            <div class="visual-catalog__label">new</div>
+          <article class="visual-catalog__section visual-catalog__section--equipment">
             <h3 class="visual-catalog__ttl">
               Техника
             </h3>
@@ -110,8 +107,8 @@
             </a>
           </article>
           <div class="section-slider">
-            <button class="section-slider__btn section-slider__btn--left" type="button">prev</button>
-            <button class="section-slider__btn section-slider__btn--right" type="button">next</button>
+            <button class="section-slider__btn section-slider__btn--previous" type="button">prev</button>
+            <button class="section-slider__btn section-slider__btn--next" type="button">next</button>
             <article class="promo-banner">
               <img class="promo-banner__img" src="img/slider-perforators.jpg" alt="Перфораторы" width="620" height="266">
               <header class="promo-banner__header">
@@ -122,13 +119,12 @@
                   Настоящие мужские игрушки
                 </p>
               </header>
-              <a class="promo-banner__catalog-link" href="catalog.html">
+              <a class="promo-banner__catalog-link red-button" href="catalog.html">
                 ОТКРЫТЬ КАТАЛОГ
               </a>
             </article>
           </div>
-          <article class="visual-catalog__section visual-catalog__section--materials">
-            <div class="visual-catalog__label">new</div>
+          <article class="visual-catalog__section visual-catalog__section--discounts">
             <h3 class="visual-catalog__ttl">
               Скидки 50%
             </h3>
@@ -136,8 +132,7 @@
               На 350 ТОВАРОВ
             </a>
           </article>
-          <article class="visual-catalog__section visual-catalog__section--materials">
-            <div class="visual-catalog__label">new</div>
+          <article class="visual-catalog__section visual-catalog__section--delivery">
             <h3 class="visual-catalog__ttl">
               Доставка
             </h3>
@@ -228,7 +223,7 @@
           <div class="services__slider">
             <ul class="services__tabs">
               <li>
-                <button class="services__tab-btn" type="button">Доставка</button>
+                <button class="services__tab-btn services__tab-btn--active" type="button">Доставка</button>
               </li>
               <li>
                 <button class="services__tab-btn" type="button">Гарантия</button>
@@ -238,7 +233,7 @@
               </li>
             </ul>
             <section class="delivery">
-              <h2 class="delivery__ttl main-ttl">Доставка</h2>
+              <h2 class="delivery__ttl services-ttl">Доставка</h2>
               <p class="delivery__info services__text">
                 Мы с удовольствием доставим ваш товар прямо 
                 к вашему подъезду совершенно бесплатно!
@@ -247,7 +242,7 @@
               </p>
             </section>
             <section class="delivery">
-              <h2 class="delivery__ttl main-ttl">Гарантия</h2>
+              <h2 class="delivery__ttl services-ttl">Гарантия</h2>
               <p class="delivery__info services__text">
                 Если купленный у нас товар поломается или заискрит,
                 а также в случае пожара, спровоцированного его возгоранием,
@@ -256,7 +251,7 @@
               </p>
             </section>
             <section class="delivery">
-              <h2 class="delivery__ttl main-ttl">Кредит</h2>
+              <h2 class="delivery__ttl services-ttl">Кредит</h2>
               <p class="delivery__info services__text">
                 Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
               </p>

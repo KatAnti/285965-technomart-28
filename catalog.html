@@ -20,8 +20,8 @@
           <a href="" class="main-header__make-order">Оформить заказ</a>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="main-header__body">
+      <div class="main-header__body">
+        <div class="wrapper">
           <p class="main-header__title">
             Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
@@ -48,46 +48,46 @@
               </li>
             </ul>
           </div>
+          <nav>
+            <ul class="main-nav">
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Компания
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Каталог
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Новости
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Спецпредложения
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul class="main-nav">
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Компания
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Каталог
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Новости
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Спецпредложения
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Доставка
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav-link">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main class="main">
@@ -114,7 +114,7 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="catalog-filter__group">
               <legend>Производители:</legend>
-              <ul>
+              <ul class="catalog-filter__list">
                 <li>
                   <input class="catalog-filter__checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                   <label for="filter-bosch">BOSCH</label>
@@ -139,7 +139,7 @@
             </fieldset>
             <fieldset class="catalog-filter__group">
               <legend>ПИТАНИЕ:</legend>
-              <ul>
+              <ul class="catalog-filter__list">
                 <li>
                   <input class="catalog-filter__radio" type="radio" name="power-group" value="battery" id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
@@ -177,20 +177,34 @@
               </p>
             </article>
           </section>
-          <section class="about-current-products">
-            <div class="wrapper">
-              <h2>
-                ПАРА СЛОВ О ПЕРФОРАТОРАХ
-              </h2>
-              <p>
-                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
-                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-              </p>
-            </div>
-          </section>
+          <ul class="pagination-list">
+            <li class="pagination-list__item pagination-list__item--current">
+              <a>1</a>
+            </li>
+            <li class="pagination-list__item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-list__item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-list__item">
+              <a href="#">СЛЕДУЮЩАЯ</a>
+            </li>
+          </ul>
         </div>
       </div>
+      <section class="about-current-products">
+        <div class="wrapper">
+          <h2 class="about-current-products__ttl main-ttl">
+            ПАРА СЛОВ О ПЕРФОРАТОРАХ
+          </h2>
+          <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+      </section>
     </main>
     <div class="successful-cart-popup">
       <button class="successful-cart-popup__close-btn close-btn" type="button" aria-label="Закрыть оформление заказа"></button>
