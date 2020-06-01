@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -11,16 +12,16 @@
           <a class="logo" href="">
             <img src="img/logo.png" alt="Техномарт" width="108" height="18">
           </a>
-          <form action="">
-            <input class="search" type="search">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input class="search" type="search" placeholder="Поиск">
           </form>
           <a href="" class="main-header__markers">Закладки: 0</a>
           <a href="" class="main-header__basket">Корзина: 0</a>
           <a href="" class="main-header__make-order">Оформить заказ</a>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="main-header__body">
+      <div class="main-header__body">
+        <div class="wrapper">
           <p class="main-header__title">
             Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
@@ -34,7 +35,6 @@
             <a href="" class="main-header__log-in">Войти</a>
             <a href="" class="main-header__sign-up">Регистрация</a>
           </div>
-        </div>
         <nav>
           <ul class="main-nav">
             <li class="main-nav__item">
@@ -74,11 +74,12 @@
             </li>
           </ul>
         </nav>
+        </div>
       </div>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта Техномарт</h1>
       <div class="wrapper">
+        <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта Техномарт</h1>
         <section class="visual-catalog">
           <h2 class="visually-hidden">Визуальный каталог</h2>
           <article class="visual-catalog__section visual-catalog__section--materials">
@@ -150,20 +151,20 @@
             <h2 class="popular-products__ttl main-ttl">Популярные товары:</h2>
             <a href="" class="popular-products__link red-button">все поПулярные товары</a>
           </header>
-          <article class="product-preview-cart">
-            <div class="product-preview-cart__label">new</div>
-            <div class="product-preview-cart__img">
-              <img src="img/product-3.jpg" width="220" height="160" alt="Перфоратор BOSCH BFG 6000">
-              <a class="product-preview-cart__buy-link" href=""></a>
-              <a class="product-preview-cart__marked-btn" href=""></a>
+          <article class="product-preview-card">
+            <div class="product-preview-card__label">new</div>
+            <div class="product-preview-card__img">
+              <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
+              <a class="product-preview-card__buy-link" href="">КУПИТЬ</a>
+              <a class="product-preview-card__marked-btn" href="">В закладки</a>
             </div>
             <h3>
-              <a class="product-preview-cart__ttl" href="">Перфоратор BOSCH BFG 6000</a>
+              <a class="product-preview-card__ttl" href="">Перфоратор BOSCH BFG 6000</a>
             </h3>
-            <p>
-              30500 Р.
+            <p class="product-preview-card__price-before">
+              <del>30500 Р.</del>
             </p>
-            <p class="product-preview-cart__price">
+            <p class="product-preview-card__price">
               25500 Р.
             </p>
           </article>
@@ -279,7 +280,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="" class="about-company__detail-link">Подробнее о компании</a>
+          <a href="" class="about-company__detail-link red-button">Подробнее о компании</a>
         </section>
         <section class="contacts">
           <h2 class="contacts__ttl main-ttl">КОНТАКТЫ</h2>
@@ -290,7 +291,7 @@
           <div class="contacts__map">
             <img src="img/map-blank.jpg" alt="Карта с адресом" width="300" height="158">
           </div>
-          <a class="contacts__write-us" href="">Заблудились? НапиШИТЕ НАМ!</a>
+          <a class="contacts__write-us red-button" href="">Заблудились? НапиШИТЕ НАМ!</a>
         </section>
       </div>
     </main>
@@ -326,7 +327,7 @@
           <a class="logo" href="">
             <img src="img/logo.png" alt="Техномарт" width="108" height="18">
           </a>
-          <ul class="main-footer__menu main-footer__info">
+          <ul class="main-footer__menu main-footer__menu--info">
             <li class="main-footer__menu-item">
               <a href="">
                 Компания
@@ -354,7 +355,7 @@
             </li>
           </ul>
           <div class="main-footer__contacts">
-            <address class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</addressclass=main-footer__contacts>
+            <address class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="main-footer__phone" href="tel:78125550555"></a>
           </div>
           <ul class="main-footer__menu main-footer__menu--catalog">
@@ -388,13 +389,13 @@
           </p>
           <ul class="social-media">
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--vkontakte" href="">vkontakte</a>
+              <a class="social-media__link social-media__link--vkontakte" href="" aria-label="vkontakte"></a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--facebook" href="">facebook</a>
+              <a class="social-media__link social-media__link--facebook" href="" aria-label="facebook"></a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--instagram" href="">instagram</a>
+              <a class="social-media__link social-media__link--instagram" href="" aria-label="instagram"></a>
             </li>
           </ul>
           <p>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -11,8 +12,8 @@
           <a class="logo" href="index.html">
             <img src="img/logo.png" alt="Техномарт" width="108" height="18">
           </a>
-          <form action="">
-            <input class="search" type="search">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input class="search" type="search" placeholder="Поиск">
           </form>
           <a href="" class="main-header__markers">Закладки: 0</a>
           <a href="" class="main-header__basket">Корзина: 0</a>
@@ -149,29 +150,29 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">
+            <button class="catalog-filter__show-btn" type="submit">
               ПОКАЗАТЬ
             </button>
           </form>
         </section>
         <div class="right-column">
-          <section><h3>Сортировка</h3></section>
+          <section class="catalog-sort-by"><h3 class="catalog-sort-by__ttl">Сортировка</h3></section>
           <section class="catalog-list">
             <h2 class="visually-hidden">Перфораторы по выгодной цене</h2>
-            <article class="product-preview-cart">
-              <div class="product-preview-cart__label">new</div>
-              <div class="product-preview-cart__img">
+            <article class="product-preview-card">
+              <div class="product-preview-card__label">new</div>
+              <div class="product-preview-card__img">
                 <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
-                <a class="product-preview-cart__buy-link" href=""></a>
-                <a class="product-preview-cart__marked-btn" href=""></a>
+                <a class="product-preview-card__buy-link" href="">КУПИТЬ</a>
+                <a class="product-preview-card__marked-btn" href="">В закладки</a>
               </div>
               <h3>
-                <a class="product-preview-cart__ttl" href="">Перфоратор BOSCH BFG 6000</a>
+                <a class="product-preview-card__ttl" href="">Перфоратор BOSCH BFG 6000</a>
               </h3>
-              <p>
-                30500 Р.
+              <p class="product-preview-card__price-before">
+                <del>30500 Р.</del>
               </p>
-              <p class="product-preview-cart__price">
+              <p class="product-preview-card__price">
                 25500 Р.
               </p>
             </article>
@@ -235,7 +236,7 @@
             </li>
           </ul>
           <div class="main-footer__contacts">
-            <address class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</addressclass=main-footer__contacts>
+            <address class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="main-footer__phone" href="tel:78125550555"></a>
           </div>
           <ul class="main-footer__menu main-footer__menu--catalog">
@@ -269,13 +270,13 @@
           </p>
           <ul class="social-media">
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--vkontakte" href="">vkontakte</a>
+              <a class="social-media__link social-media__link--vkontakte" href="" aria-label="vkontakte"></a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--facebook" href="">facebook</a>
+              <a class="social-media__link social-media__link--facebook" href="" aria-label="facebook"></a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--instagram" href="">instagram</a>
+              <a class="social-media__link social-media__link--instagram" href="" aria-label="instagram"></a>
             </li>
           </ul>
           <p>
