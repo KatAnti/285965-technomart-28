@@ -605,6 +605,7 @@ a {
 }
 
 .product-preview-card {
+  position: relative;
   width: 220px;
   margin-right: 20px;
   margin-bottom: 18px;
@@ -687,9 +688,36 @@ a {
   color: var(--basic-white);
 }
 
+.visual-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
+
 .visual-catalog__section {
   position: relative;
   font-family: Cuprum;
+  min-height: 123px;
+}
+
+.visual-catalog__slider {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.popular-products,
+.popular-producers {
+  margin-bottom: 70px;
+}
+
+.popular-products__ttl,
+.popular-producers__ttl {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .visual-catalog__section--materials {
@@ -719,7 +747,8 @@ a {
   color: var(--basic-white);
 }
 
-.visual-catalog__section--new::after {
+.visual-catalog__section--new::after,
+.product-preview-card--new::after {
   content: "";
   position: absolute;
   top: 0;
@@ -793,15 +822,49 @@ a {
 }
 
 .section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  padding-left: 28px;
+  padding-right: 14px;
   background-color: var(--section-ttl-background);
 }
 
+.popular-products__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-products__list .product-preview-card:nth-of-type(4n) {
+  margin-right: 0;
+}
+
 .popular-producers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.popular-producers-list__item {
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.popular-producers-list__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .popular-producers-list__logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   border: 1px solid var(--border-grey);
 }
 
@@ -814,7 +877,14 @@ a {
   opacity: 0.5;
 }
 
+.services {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background: var(--basic-background);
+}
+
 .services-ttl {
+  margin: 0;
   font-family: Cuprum;
   font-weight: normal;
   font-size: 36px;
@@ -848,8 +918,20 @@ a {
   color: var(--navy-light);
 }
 
-.services {
-  background: var(--basic-background);
+.services__slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guarantee,
+.credit {
+  display: none;
+}
+
+.guarantee,
+.credit,
+.delivery {
+  width: 620px;
 }
 
 .about-current-products {
