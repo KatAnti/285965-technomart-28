@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <div class="main-header__top">
-        <div class="wrapper">
+        <div class="wrapper main-header__wrapper">
           <a class="logo" href="index.html">
-            <img src="img/logo.png" alt="Техномарт" width="108" height="18">
+            <img src="img/logo-technomart.svg" alt="Техномарт" width="108" height="18">
           </a>
           <form action="https://echo.htmlacademy.ru" method="post">
             <input class="search" type="search" placeholder="Поиск">
@@ -23,7 +23,7 @@
       <div class="main-header__body">
         <div class="wrapper">
           <p class="main-header__title">
-            Интернет-магазин строительных материалов и инструментов для ремонта
+            Интернет-магазин строительных материалов<br> и инструментов для ремонта
           </p>
           <div class="main-header__contacts">
             <a class="main-header__phone-number" href="tel:78125550555">+7 (812) 555-05-55</a>
@@ -48,7 +48,7 @@
               </li>
             </ul>
           </div>
-          <nav>
+          <nav class="main-header__main-nav">
             <ul class="main-nav">
               <li class="main-nav__item">
                 <a href="" class="main-nav-link">
@@ -91,7 +91,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="wrapper">
+      <div class="wrapper main-wrapper">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
             <a href="" aria-label="Вернуться на главную"></a>
@@ -106,7 +106,7 @@
             <a href="">Перфораторы</a>
           </li>
         </ul>
-        <h1 class="main-page-ttl">ПЕРФОРАТОРЫ</h1>
+        <h1 class="main-page-ttl main__ttl">ПЕРФОРАТОРЫ</h1>
         <section class="catalog-filter left-column">
           <h2 class="catalog-filter__ttl">
             Фильтр
@@ -159,13 +159,60 @@
           <section class="catalog-sort-by"><h3 class="catalog-sort-by__ttl">Сортировка</h3></section>
           <section class="catalog-list">
             <h2 class="visually-hidden">Перфораторы по выгодной цене</h2>
-            <article class="product-preview-card">
-              <div class="product-preview-card__label">new</div>
-              <div class="product-preview-card__img">
-                <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
+            <article class="product-preview-card product-preview-card--new">
+              <div class="product-preview-card__actions">
                 <a class="product-preview-card__buy-link" href="">КУПИТЬ</a>
                 <a class="product-preview-card__marked-btn" href="">В закладки</a>
               </div>
+              <img class="product-preview-card__img" src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
+              <h3>
+                <a class="product-preview-card__ttl" href="">Перфоратор BOSCH BFG 6000</a>
+              </h3>
+              <p class="product-preview-card__price-before">
+                <del>30500 Р.</del>
+              </p>
+              <p class="product-preview-card__price">
+                25500 Р.
+              </p>
+            </article>
+            <article class="product-preview-card product-preview-card--new">
+              <div class="product-preview-card__actions">
+                <a class="product-preview-card__buy-link" href="">КУПИТЬ</a>
+                <a class="product-preview-card__marked-btn" href="">В закладки</a>
+              </div>
+              <img class="product-preview-card__img" src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
+              <h3>
+                <a class="product-preview-card__ttl" href="">Перфоратор BOSCH BFG 6000</a>
+              </h3>
+              <p class="product-preview-card__price-before">
+                <del>30500 Р.</del>
+              </p>
+              <p class="product-preview-card__price">
+                25500 Р.
+              </p>
+            </article>
+            <article class="product-preview-card product-preview-card--new">
+              <div class="product-preview-card__actions">
+                <a class="product-preview-card__buy-link" href="">КУПИТЬ</a>
+                <a class="product-preview-card__marked-btn" href="">В закладки</a>
+              </div>
+              <img class="product-preview-card__img" src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
+              <h3>
+                <a class="product-preview-card__ttl" href="">Перфоратор BOSCH BFG 6000</a>
+              </h3>
+              <p class="product-preview-card__price-before">
+                <del>30500 Р.</del>
+              </p>
+              <p class="product-preview-card__price">
+                25500 Р.
+              </p>
+            </article>
+            <article class="product-preview-card product-preview-card--new">
+              <div class="product-preview-card__actions">
+                <a class="product-preview-card__buy-link" href="">КУПИТЬ</a>
+                <a class="product-preview-card__marked-btn" href="">В закладки</a>
+              </div>
+              <img class="product-preview-card__img" src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
               <h3>
                 <a class="product-preview-card__ttl" href="">Перфоратор BOSCH BFG 6000</a>
               </h3>
@@ -219,10 +266,10 @@
     <footer class="main-footer">
       <div class="main-footer__top">
         <div class="wrapper">
-          <a class="logo" href="">
-            <img src="img/logo.png" alt="Техномарт" width="108" height="18">
+          <a class="logo logo--footer" href="">
+            <img src="img/logo-technomart.svg" alt="Техномарт" width="136" height="21">
           </a>
-          <ul class="main-footer__menu main-footer__info">
+          <ul class="main-footer__menu main-footer__menu--info">
             <li class="main-footer__menu-item">
               <a href="">
                 Компания
@@ -293,14 +340,16 @@
               <a class="social-media__link social-media__link--instagram" href="" aria-label="instagram"></a>
             </li>
           </ul>
-          <p>
-            Обратная связь:<br>
-            <a class="main-footer__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p>
-            Разработано
-            <a class="main-footer__made-by-link" href="htmlacademy.ru">htmlacademy.ru</a>
-          </p>
+          <div class="main-footer__contact-links">
+            <p>
+              Обратная связь:<br>
+              <a class="main-footer__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>
+              Разработано<br>
+              <a class="main-footer__made-by-link" href="htmlacademy.ru">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
